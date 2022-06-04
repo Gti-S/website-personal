@@ -1,0 +1,539 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+
+    --lightcolor: rgb(6, 255, 180);
+    --darkcolor: rgba(6, 255, 193, 0.37);
+    --darktheme: rgb(51, 51, 51);
+
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+
+    background-image: url("images/back.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+}
+
+video {
+
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 990px;
+    width: auto;
+    height: auto;
+    z-index: -100;
+
+}
+
+::-webkit-scrollbar-thumb {
+
+    background-color: rgb(6, 255, 180)
+
+}
+
+
+
+header {
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10em;
+    width: 100%;
+    
+    position: fixed;
+    top: -1px;
+
+}
+
+header .logo {
+
+    color: transparent;
+    background: linear-gradient(90deg, var(--darkcolor), var(--lightcolor));
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 2.3em;
+    -webkit-background-clip: text;
+    background-clip: text;
+    letter-spacing: 3px;
+
+}
+
+nav {
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+nav a {
+
+    color: transparent;
+    background: linear-gradient(90deg, var(--darkcolor), var(--lightcolor));
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.3em;
+    margin-left: 12px;
+    -webkit-background-clip: text;
+    background-clip: text;
+
+    transition: 0.8s ease;
+
+}
+
+nav a:hover {
+
+    color: var(--lightcolor);
+
+}
+
+
+
+main {
+
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20em;
+
+}
+
+.paragraph {
+
+    position: relative;
+    right: -70em;
+
+    animation-name: para;
+    animation-duration: 1.7s;
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
+
+    color: transparent;
+    background: linear-gradient(to left, var(--darkcolor), rgba(3, 255, 255, 0.808));
+    background-clip: text;
+    -webkit-background-clip: text;
+
+    font-weight: 600;
+    font-size: large;
+
+}
+
+@keyframes para {
+
+    from {right: -70em;}
+    to {right: -5em;}
+
+}
+
+.paragraph p:first-child {
+
+    font-weight: 900;
+    font-size: xx-large;
+
+}
+
+.paragraph i {
+
+    padding-left: 15px;
+    font-size: xx-large;
+
+}
+
+.paragraph div {
+
+    padding-top: 27px;
+
+}
+
+.paragraph a {
+
+    cursor: default;
+    text-decoration: none;
+    color: transparent;
+    background: linear-gradient(to right, #008cff, #50ffff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    transition: 0.7s ease;
+
+}
+
+.paragraph a:hover {
+
+    padding: 2px;
+    color: #008cff;
+    transform: scale(1.1);
+    cursor: default;
+
+}
+
+.fa-html5 {
+
+    color: rgb(255, 123, 0);
+
+}
+
+.fa-css3-alt {
+
+    color: rgb(1, 137, 255);
+
+}
+
+.fa-js {
+
+    color: rgb(238, 255, 0);
+
+}
+
+.fa-c {
+
+    color: rgb(116, 134, 150);
+
+}
+
+.fa-php {
+
+    color: rgb(76, 88, 189);
+
+}
+
+.fa-database {
+
+    color: rgb(160, 160, 160);
+
+}
+
+.fa-java {
+
+    color: indianred;
+
+}
+
+.main-image {
+
+    position: relative;
+    top: 5em;
+    left: -32em;
+
+    animation-name: mimg;
+    animation-duration: 1.7s;
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes mimg {
+
+    from {left: -32;}
+    to {left: 3.7em;}
+
+}
+
+
+.ventures {
+
+    background-color: var(--darktheme);
+    margin-top: 25em;
+    height: 45em;
+
+}
+
+.venture-c {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 12em;
+    position: relative;
+
+}
+
+.venture-c div {
+
+    padding-left: 10em;
+
+}
+
+.venture-c i {
+
+    color: rgb(73, 73, 73);
+    font-size: xx-large;
+
+}
+
+.fa-react {
+
+    position: absolute;
+    top: 10em;
+    left: 30em;
+    font-weight: 700;
+
+}
+
+.fa-file-contract {
+
+    position: absolute;
+    top: 5em;
+    left: 40em;
+    transform: rotate(-20deg);
+
+}
+
+.fa-users-rectangle {
+
+    position: absolute;
+    top: 9em;
+    transform: rotate(40deg);
+    left: 12em;
+
+}
+
+.fa-code-pull-request {
+
+    position: absolute;
+    left: 50em;
+    top: 13em;
+    transform: rotate(20deg);
+
+}
+
+.fa-github-alt {
+
+    position: absolute;
+    left: 18em;
+    top: 18em;
+    transform: rotate(-20deg);
+
+}
+
+.fa-virus {
+
+    position: absolute;
+    left: 2em;
+    top: 20em;
+
+}
+
+.venture-c div p {
+
+    color: transparent;
+    background: linear-gradient(to left, var(--darkcolor), var(--lightcolor));
+    background-clip: text;
+    -webkit-background-clip: text;
+    font-size: xx-large;
+    font-weight: 600;
+
+}
+
+.venture-c div a {
+
+    text-decoration: none;
+    color: transparent;
+    background: linear-gradient(to left, rgb(3, 3, 3), rgb(151, 151, 151) ,rgb(250, 250, 250));
+    background-clip: text;
+    -webkit-background-clip: text;
+    transition: 0.9s ease;
+
+}
+
+.venture-c div a:hover {
+
+
+    color: white;
+
+}
+
+.venture-c img {
+
+
+    position: relative;
+    right: 10em;
+    top: 9.5em;
+
+}
+
+
+
+
+.contact {
+
+    background-color: var(--darktheme);
+    height: 45em;
+    position: relative;
+
+}
+
+.contact i {
+    color: rgb(73, 73, 73);
+    font-size: xx-large;
+}
+
+.contact-c {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-top: 200px;
+
+}
+
+.contact-p {
+
+    padding-right: 5em;
+
+}
+
+.contact-p p {
+    
+    color: transparent;
+    background: linear-gradient(to left, var(--darkcolor), var(--lightcolor));
+    background-clip: text;
+    -webkit-background-clip: text;
+    font-size: xx-large;
+    font-weight: 600;
+
+}
+
+.contact-inf {
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 6em;
+    position: relative;
+    top: 6em;
+
+}
+
+.card {
+
+    background-color: azure;
+    border: 1px white solid;
+    width: 250px;
+    height: 150px;
+    border-radius: 10px;
+    transition: 0.7s ease;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+.card:hover {
+
+    transform: scale(1.1);
+
+}
+
+.card img {
+
+    width: 100%;
+    height: 100px;
+    border-bottom: 3px black solid;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+
+}
+
+.card1 {
+
+    margin-left: 1.4em;
+    position: relative;
+    top: 3em;
+    background-color: azure;
+    border: 1px white solid;
+    width: 250px;
+    height: 150px;
+    border-radius: 10px;
+    transition: 0.7s ease;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+.card1:hover {
+
+    transform: scale(1.1);
+
+}
+
+.card1 img {
+
+    width: 100%;
+    height: 100px;
+    border-bottom: 3px black solid;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+
+}
+
+.card-info {
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.card-info a {
+
+    text-decoration: none;
+    color: darkgrey;
+    font-size: medium;
+    font-weight: 600;
+    transition: 0.7s ease;
+
+}
+
+.card-info a:hover {
+
+    color: var(--lightcolor);
+
+}
+
+.card-info a::selection {
+
+    color: var(--lightcolor);
+    background-color: black;
+
+}
+
+
+
+footer {
+
+    background-color: var(--darktheme);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+
+}
+
+footer p {
+
+    color: transparent;
+    background: linear-gradient(to left, var(--lightcolor), var(--darkcolor));
+    background-clip: text;
+    -webkit-background-clip: text;
+    font-weight: 700;
+
+}
